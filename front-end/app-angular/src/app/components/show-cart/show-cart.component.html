@@ -1,0 +1,70 @@
+ <div class="container">
+     <div class = "columns is-mobile is-centered">
+         <div class = 'column is-10'>
+             <app-nav-bar [numRecordsInCart] = this.numRecords></app-nav-bar>
+                 <div class="main-column mt-2">
+                      <header class = " mt-10">
+                         <div class="column is-7 ml-5">
+                             <h3 class='is-size-3 is-vcentered mt-5 mb-6'>Carrito de compras</h3>
+                         </div>
+                         <hr class = 'is-centered'>
+                      </header>
+                 </div>
+                 <div class="_body is-mobile main-column" *ngIf="this.numRecords>0; else noRecords" >
+                  <div class="table-container table-responsive">
+                    <table class="table table is-bordered is-striped is-narrow is-hoverable mt-3"  style="margin: 0 auto;">
+                         <thead class='thead'>
+                            <tr>
+                                <th scope="col" align='center'>Imagen</th>
+                                <th scope="col">Producto</th>
+                                <th scope="col">Precio</th>
+                                <th scope="col">Cantidad</th>
+                                <th scope="col">Subtotal</th>
+                            </tr>
+                         </thead>
+                         <tbody>
+                             <tr *ngFor = "let p of productsInCart">
+                                 <td align='center'>
+                                     <div class="card-image" style="width: 4rem; height: 5rem;">
+                                         <figure class='image is-4by3 is-centered'>
+                                             <img [src]='"/assets/img/" + p.name' alt="" class='mt-2 mage is-4by3'>
+                                          </figure>
+                                     </div>
+
+                                 </td>
+                                 <td><b>{{ p.name.slice(0,-4) | titlecase}}</b></td>
+                                 <td align='right'> <p>{{p.price | currency:'$'}}</p> </td>
+                                 <td align='right'>{{p.quantity}}</td>
+                                 <td align='right'>{{p.price * p.quantity | currency: '$'}}</td>
+
+                             </tr>
+                         </tbody>
+                         <tfoot>
+                             <td colspan='6' align="right">
+                                 <p class="is-size-4">Total: <b>{{totalSale | currency:'$'}} </b> </p>
+
+                             </td>
+
+                         </tfoot>
+                    </table>
+                    </div>
+                         <div class="column ">
+                             <form action="">
+                                 <div class="buttons navbar-end">
+                                     <button class="button is-success" (click)="makePay()">Pagar</button>
+                                     <a href="products" class="button is-dark">Ir a productos</a>
+                                 </div>
+                             </form>
+                         </div>
+                    </div>
+                    <ng-template #noRecords>
+                        <div class="notification is-warning">
+                            <h3 class="is-size-4">No ha seleccionado productos</h3>
+                            <div class="buttons navbar-end">
+                                <a href="products" class="button is-dark">Ir a productos</a>
+                            </div>
+                        </div>
+                    </ng-template>
+         </div>
+     </div>
+ </div>

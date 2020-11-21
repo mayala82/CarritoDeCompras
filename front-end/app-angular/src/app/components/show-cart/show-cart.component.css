@@ -1,0 +1,35 @@
+ .main-column {
+     background-color: white;
+     border-radius: 5px;
+     font-family: "Century Gothic", CenturyGothic, AppleGothic;
+ }
+ hr {
+     height: 1px;
+     width: 98%;
+     background-color: darkgrey;
+     margin: auto;
+ }
+ .card {
+     border-radius: 5px;
+}
+
+.card{
+     padding-right: 1rem;
+     padding-left: 1rem;
+     padding-top: 3rem;
+}
+figure>img:hover{
+     -webkit-transform:scale(1.1);
+     transform:scale(1.5);
+     border: 1px solid rgba(0, 0, 0, 0);
+     border-radius: 10px 10px 10px 10px;
+     transition-duration: 0.2s;
+}
+td{
+     vertical-align:middle;
+}
+tfoot{
+    text-align: right;
+}
+
+

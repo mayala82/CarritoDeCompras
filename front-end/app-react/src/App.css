@@ -1,0 +1,11 @@
+ body{
+     background-image: url('/img/main-fondo.jpg');
+ }
+ body{
+     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+     font-size: 14px;
+     font-style: normal;
+     font-variant: normal;
+     font-weight: 700;
+     line-height: 26.4px;
+ }

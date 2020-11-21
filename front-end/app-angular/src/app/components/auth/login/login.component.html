@@ -1,0 +1,61 @@
+ <div class="main-div">
+     <div class="columns is-mobile container is-8">
+         <div class="column is-half is-offset-one-quarter">
+             <label class="label is-size-4 columns is-centered has-text-white">Inicia sesión</label>
+             <form
+                 [formGroup]="loginForm"
+                 (ngSubmit)="login(loginForm)"
+                 novalidate>
+                 <h6
+                     class="is-size-5 has-text-white"
+                     *ngIf="logError">Error en nombre de usuario y/o conraseña
+                 </h6>
+                 <div class="field">
+                     <label class="label has-text-white">Correo electrónico</label>
+                     <div class="control has-icons-left has-icons-right">
+                         <input
+                             type="email"
+                             class="input is-success"
+                             formControlName="email"
+                             placeholder="E-mail"
+                             autofocus
+                         >
+                         <span class="icon is-small is-left">
+                             <i class="fas fa-user"></i>
+                         </span>
+                         <span class="icon is-small is-right">
+                             <i class="fas fa-check"></i>
+                         </span>
+                     </div>
+                     <!-- <p class="help is-size-5 is-danger">This username is available</p> -->
+                 </div>
+                 <h6 class="help is-size-5 has-text-white" *ngIf="!loginForm.controls['email'].valid && loginForm.controls['email']?.touched">Email es requerido o no tiene formato vállido</h6>
+                 <div class="field">
+                     <label class="label has-text-white">Contraseña</label>
+                     <div class="control has-icons-left has-icons-right">
+                         <input
+                             type="password"
+                             class="input is-success"
+                             formControlName="password"
+                             placeholder="Password"
+                             required
+                         >
+                         <span class="icon is-small is-left">
+                             <i class="fa fa-key"></i>
+                         </span>
+                         <span class="icon is-small is-right">
+                             <i class="fas fa-check"></i>
+                         </span>
+                     </div>
+                     <!-- <p class="help is-size-5 is-danger">This username is available</p> -->
+                 </div>
+                 <h6 class="is-size-5 has-text-white" *ngIf="loginForm.get('password').hasError('required') && loginForm.get('password').touched">Password is requerido</h6>
+                 <div class="field is-grouped columns is-centered mt-1">
+                     <div class="control">
+                         <button type = 'submit' class="button is-success">Ingresar</button>
+                     </div>
+                 </div>
+             </form>
+         </div>
+     </div>
+</div>

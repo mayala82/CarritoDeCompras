@@ -1,0 +1,38 @@
+Instalaciónn de angular cli				: npm install -g @angular/cli
+Creación del proyecto angular			: ng new app-angular
+
+Acceder a la carpeta del proyecto		: cd app-angular
+Ejecutar la plicación					: ng serve --open
+
+Instalación de framework bulma			: npm install --save bulma
+
+
+
+En el proyecto Angular, en el srchivo src/environments/environment.ts.
+export const environment = {
+  production: false,
+  serverUrl: 'http://localhost:8080'
+};
+
+NOTA IMPORTANTE:
+Antes de poder usar HttpClient, debe importar el Angular HttpClientModule.
+La mayoría de las aplicaciones lo hacen en el AppModule raíz.
+
+Para ello en el archivo app/app.module.ts debe importar lo siguient
+{ HttpClientModule } from '@angular/common/http';
+
+    // import HttpClientModule after BrowserModule.
+    HttpClientModule,
+
+ng generate service services/http-products.service
+ng generate service services/auth.service.service
+ng generate service services/cart.service.service
+Creación de un pipe: ng generate pipe pipes/filter
+Creación de un guard: ng generate guard auth
+Elegir la opción canActivate
+Elegir la opción canActivate
+
+Una vez creado el guard hay que importarlo en appmodule.ts
+y en app.routing.mdule.ts
+
+Usar el guard en la ruta que deseamos proteger

@@ -1,0 +1,31 @@
+
+Desarrollo de una herramienta web: Carrito de compas:
+•	Frontend. Dos versiones de frontEnd: Una fue desarrollada con Angular y la otra fue desarrollada con React. Ambas versiones apuntan a un solo backend y contienen las mismas funcionalidades
+•	Backend: Desarrollado con node.js Es server provee los end point que funcionan tanto para Angular cmo para react
+•	Motor de base de datos: MySql
+
+
+ceación del packaje                     : npm init -y
+instalación de express                  : npm install express
+reiniciar el código                     : npm install nodemon -D
+Instalación ORM sequelize               : npm install --save sequelize
+Instalacion modulo mysql                : npm install mysql2 --save
+
+asegura de que los cuerpos de las 
+solicitudes entrantes se lean y 
+adjunten al objeto de la solicitud      : npm install body-parser --save
+
+cors es un middleware responsable 
+de permitir solicitudes de 
+origen cruzado                          : npm install cors --save
+
+ver peticiones que llegan al server     : npm install morgan
+para escribir codigo moderno javascript : npm install @babel/polyfill
+
+Instalación módulos complementarios:
+npm install --save-dev @babel/core @babel/cli @babel/preset-env
+
+reiniciar el código                     : npm install nodemon -D
+                                        : npm install @babel/node -D
+
+npm install jsonwebtoken

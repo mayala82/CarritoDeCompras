@@ -1,0 +1,32 @@
+<nav class="navbar container " role="navigation" aria-label="main navigation">
+     <div class="navbar-brand">
+         <a href="">
+             <a class="navbar-brand is-size-4" href="#"> La bodega</a>
+         </a>
+     </div>
+     <div id="navbarBasicExample" class="navbar-menu">
+         <div class="navbar-end">
+             <div class="nav-link">
+                 <a
+                     class="is-light"
+                     href="products">
+                     <i class="fas fa-th"></i>
+                 </a>
+                 <a
+                     class="is-light"
+                     (click)="showcart()">
+
+                     <i class="fas fa-shopping-cart">
+                       <span class="tag is-danger">{{numRecordsInCart}}</span>
+                     </i>
+                 </a>
+                 <a class="is-light">
+                     <i class="fas fa-credit-card"></i>
+                 </a>
+                 <a class="is-light" (click)="this.authService.logout()">
+                     <i class="fas fa-sign-out-alt"></i>
+                 </a>
+             </div>
+         </div>
+     </div>
+ </nav>

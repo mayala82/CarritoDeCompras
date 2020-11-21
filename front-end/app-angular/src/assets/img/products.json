@@ -1,0 +1,35 @@
+{"products":[{"name": "Aguacate", "price":"5000" ,"quantity":"70" ,"path": "D:/imagenesBase/aguacate.jpg" },
+             {"name": "Ajo", "price":"7500" ,"quantity":"312" ,"path": "D:/imagenesBase/ajo.jpg" },
+		     {"name": "Almendras", "price":"8600" ,"quantity": "650" ,"path": "D:/imagenesBase/almendras.jpg" },
+		     {"name": "Arándalos", "price":"12500" ,"quantity":"260" ,"path": "D:/imagenesBase/arandanos.jpg" },
+		     {"name": "Brócolí", "price":"17500" ,"quantity":"350" ,"path": "D:/imagenesBase/brocoli.png" },
+		     {"name": "Calabaza", "price":"13500" ,"quantity":"152" ,"path": "D:/imagenesBase/calabaza.jpg" },
+		     {"name": "Canela", "price":"16000" ,"quantity":"65" ,"path": "D:/imagenesBase/canela.jpg" },
+		     {"name": "Cebolla", "price": "6500","quantity":"250" ,"path": "D:/imagenesBase/cebolla.jpg" },
+		     {"name": "Fresa", "price":"6000" ,"quantity":"321" ,"path": "D:/imagenesBase/fresa.jpg" },
+		     {"name": "Kiwi", "price":"12500" ,"quantity":"360" ,"path": "D:/imagenesBase/kiwi.jpg" },
+		     {"name": "Limón", "price":"6000" ,"quantity":"6565" ,"path": "D:/imagenesBase/limon.jpg" },
+		     {"name": "Lychee", "price":"54645" ,"quantity":"654" ,"path": "D:/imagenesBase/lychee.jpg" },
+		     {"name": "Maiz", "price":"13000" ,"quantity":"655" ,"path": "D:/imagenesBase/maiz.jpg" },
+		     {"name": "Manzana", "price":"4000" ,"quantity":"556" ,"path": "D:/imagenesBase/manzana.jpg" },
+		     {"name": "Naranja", "price":"4800" ,"quantity":"665" ,"path": "D:/imagenesBase/naranja.jpg" },
+		     {"name": "Papa", "price":"5646" ,"quantity":"655" ,"path": "D:/imagenesBase/papa.jpg" },
+		     {"name": "Pasta", "price":"4645" ,"quantity":"121" ,"path": "D:/imagenesBase/pasta.jpg" },
+		     {"name": "Pimienta", "price":"4555" ,"quantity":"236" ,"path": "D:/imagenesBase/pimienta.jpg" },
+		     {"name": "Repollo", "price":"4600" ,"quantity":"232" ,"path": "D:/imagenesBase/repollo.jpg" },
+		     {"name": "Tomate", "price":"6500" ,"quantity":"450" ,"path": "D:/imagenesBase/tomate.jpg" },
+		     {"name": "zanahoria", "price":"5646" ,"quantity":"454" ,"path": "D:/imagenesBase/zanahoria.jpg" }
+		   ]
+}
+		   
+
+
+
+
+
+
+
+
+
+
+

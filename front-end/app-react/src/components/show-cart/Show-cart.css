@@ -1,0 +1,11 @@
+ .main-column {
+     background-color: white;
+     border-radius: 5px;
+     font-family: "Century Gothic", CenturyGothic, AppleGothic;
+ }
+ tr{
+    vertical-align:middle;
+ }
+ .container{
+     margin-top: 10px;
+ }

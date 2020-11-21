@@ -1,0 +1,22 @@
+.main-login{
+     background-image: url('/img/login-fondo.jpg');
+     height: 100vh;
+     width: 100%;
+     background-color: rgba(0, 0, 0, 0.3);
+     text-align: center;
+     position: absolute;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .test{
+    margin-top: 1px;
+ }
+ .hide{
+    display: none;
+ }
+ .visible{
+    visibility: visible;
+
+ }
+ 

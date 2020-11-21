@@ -1,0 +1,15 @@
+ .main-column {
+     background-color: white;
+     margin-top: 10px;
+     border-radius: 5px;
+ }
+ figure>img{
+     border: 1px solid rgba(0, 0, 0, 0);
+     border-radius: 10px 10px 10px 10px;
+  }
+ .is-mobile{
+     margin-top: 20px;
+ }
+ .card-footer{
+     margin-top: 30px;
+ }

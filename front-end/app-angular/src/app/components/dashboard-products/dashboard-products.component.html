@@ -1,0 +1,72 @@
+ <app-nav-bar [numRecordsInCart] = this.numRecords ></app-nav-bar>
+ <div class="container main-div">
+     <header>
+         <div class="columns">
+             <div class="column">
+                 <h3 class='is-size-4 is-vcentered'>Catálogo de productos</h3>
+             </div>
+             <div class="column is-4 ml-5">
+                ¿Que estás buscando?
+                 <div class="control">
+                     <input
+                         class="input is-primary"
+                         type="text"
+                         name="setFilter"
+                         placeholder="Buscar producto"
+                         [(ngModel)] = "setFilter"
+                         autofocus
+                     >
+                 </div>
+             </div>
+         </div>
+         <hr class = 'is-centered'/>
+     </header>
+     <div class="scroll">
+         <div class="columns is-mobile is-centered is-multiline is-one-quarter mt-2">
+             <div class = '' *ngFor="let p of products | filter: setFilter">
+                 <div class="card is-mobile column is-one-quarter mr-1 ml-1" style="width: 17rem; height: 28rem;">
+                    <div className="card-image">
+                        <figure className="image is-48x48">
+                             <img [src]='"/assets/img/" + p.name'>
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                         <div class="media">
+                             <div class = 'media-content'>
+                                 <p class="title is-4">{{ p.name.slice(0,-4) | titlecase}}</p>
+                             </div>
+                         </div>
+                         <div class="content">
+                             <p class="subtitle is-6"><b>Precio:</b>{{p.price | currency:'$'}}</p>
+                             <p class="subtitle is-6"><b>Udes. disponibles:</b> {{p.quantity}}</p>
+                             <div class="buttons is-narrow">
+                                 <a
+                                     [routerLink]="['show-details', p.id]"
+                                     class="button is-small is-info"
+                                     style="width: 4rem">
+                                         Detalles
+                                 </a>
+                                 <button
+                                     class = "button is-small is-warning "
+                                     (click) = "sendToCart(p.id, howMany.value, p.price, p.name.slice(0,-4), p.quantity)"
+                                     style="width: 4rem" >
+                                         Añadir
+                                 </button>
+                                 <div class="control  is-5">
+                                     <input
+                                         class="input is-small is-primary"
+                                         style='width: 50px'
+                                         type="number"
+                                         value = "1"
+                                         style="width: 50px"
+                                         #howMany
+                                     >
+                                </div>
+                             </div>
+                         </div>
+                    </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>

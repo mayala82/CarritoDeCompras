@@ -1,0 +1,33 @@
+ <div class="container">
+     <div class="columns is-mobile is-centered">
+         <div class="column is-10">
+             <div class="columns main-column">
+                 <div class="column">
+                     <div>
+                         <div class="card">
+                             <div class="is-size-4 is-vcentered">
+                                 <h5 class="is-size-5"><b>{{ product.name.slice(0,-4) | titlecase}}</b> </h5>
+                             </div>
+                             <div class="cadr-image">
+                                 <figure class='image is-4by3'>
+                                     <img [src]='"/assets/img/" + product.name' alt="" class='mt-2 mage is-4by3'>
+                                 </figure>
+                             </div>
+                             <div class="card-footer">
+                                 <a href="products" class="button is-info">Atrás</a>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="column">
+                     <p class="bd-notification is-primary">
+                         <code class="html"><b>Precio: </b>{{product.price | currency:'$'}}</code><br>
+                     </p>
+                     <p class="bd-notification is-primary">
+                         <code class="html"><b>Unidades disponibles:</b> {{product.quantity}}</code><br>
+                     </p>
+                 </div>
+             </div>
+         </div>
+     </div>
+</div>
