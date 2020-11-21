@@ -1,5 +1,5 @@
  CREATE DATABASE online_store;
- USE online_store;
+ USE store;
 
  CREATE TABLE users(
      id int(10) unsigned NOT NULL AUTO_INCREMENT,
